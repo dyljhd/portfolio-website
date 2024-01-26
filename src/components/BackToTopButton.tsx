@@ -3,10 +3,13 @@ import {
   ElementRef,
   MutableRefObject,
   SetStateAction,
+  useContext,
   useRef,
 } from 'react';
 
 import { AchievementName, Argument, UnknownCommand } from '@/types';
+
+import { AnimationContext } from '@/context';
 
 import { cn } from '@/utils';
 
@@ -35,11 +38,26 @@ export const BackToTopButton = ({
   setIsBackToTopButtonAnimationRunning,
   handleAchievement,
 }: IBackToTopButtonProps) => {
+  const { isAnimationsEnabled } = useContext(AnimationContext);
+
   const backToTopButtonRef = useRef<ElementRef<'button'> | null>(null);
 
+  const handleTerminalBodyScrollToTop = () => {
+    terminalBodyRef.current?.scrollTo({
+      top: 0,
+      behavior: isAnimationsEnabled ? 'smooth' : 'instant',
+    });
+  };
+
   const handleScrollToTop = () => {
-    if (backToTopButtonRef.current != null) {
-      backToTopButtonRef.current.classList.add('animate-takeoff');
+    if (!isAnimationsEnabled) {
+      setIsBackToTopButtonVisible(false);
+      handleTerminalBodyScrollToTop();
+      handleAchievement({ name: 'ROCKET' });
+    } else {
+      if (backToTopButtonRef.current != null) {
+        backToTopButtonRef.current.classList.add('animate-takeoff');
+      }
     }
   };
 
@@ -47,7 +65,7 @@ export const BackToTopButton = ({
     <button
       ref={backToTopButtonRef}
       className={cn(
-        'absolute bottom-8 right-5 transition-opacity animate-bounce',
+        'fixed bottom-8 right-5 transition-opacity animate-bounce',
         isBackToTopButtonVisible
           ? 'opacity-100'
           : 'opacity-0 pointer-events-none',
@@ -55,10 +73,7 @@ export const BackToTopButton = ({
       tabIndex={isBackToTopButtonVisible ? 0 : -1}
       onAnimationStart={(e) => {
         if (e.animationName === 'takeoff') {
-          terminalBodyRef.current?.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
+          handleTerminalBodyScrollToTop();
           setIsBackToTopButtonAnimationRunning(true);
         }
       }}

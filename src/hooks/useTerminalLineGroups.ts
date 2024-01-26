@@ -132,6 +132,7 @@ const reducer = (
           return handleAddNewTerminalLineGroup({
             ...common,
             name: 'PROJECTS',
+            events: { ...common.events, shouldScrollToBottom: false },
           });
         }
         case COMMANDS.CONTACT: {

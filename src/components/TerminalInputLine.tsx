@@ -1,4 +1,11 @@
-import { ElementRef, KeyboardEvent, useContext, useRef, useState } from 'react';
+import {
+  ChangeEvent,
+  ElementRef,
+  KeyboardEvent,
+  useContext,
+  useRef,
+  useState,
+} from 'react';
 
 import {
   AchievementName,
@@ -39,6 +46,7 @@ export const TerminalInputLine = ({
   const terminalInputRef = useRef<ElementRef<'input'> | null>(null);
 
   const [terminalInput, setTerminalInput] = useState('');
+  const [cursorPosition, setCursorPosition] = useState(0);
   const [curHistoryCommandId, setCurHistoryCommandId] = useState<string | null>(
     null,
   );
@@ -47,7 +55,8 @@ export const TerminalInputLine = ({
     handleCommand({ trigger: 'STANDARD', input: terminalInput });
     setCurHistoryCommandId(null);
     setTerminalInput('');
-    terminalInputRef.current?.blur();
+    setCursorPosition(0);
+    // terminalInputRef.current?.blur();
   };
 
   const handleArrowUpKeyDown = () => {
@@ -65,11 +74,14 @@ export const TerminalInputLine = ({
 
     if (prev == null) return;
 
+    const newTerminalInput = `${prev.command}${
+      prev.argument.length > 0 ? ` ${prev.argument}` : ''
+    }`;
+
     handleAchievement({ name: 'COMMAND_HISTORY' });
     setCurHistoryCommandId(prev.key);
-    setTerminalInput(
-      `${prev.command}${prev.argument.length > 0 ? ` ${prev.argument}` : ''}`,
-    );
+    setTerminalInput(newTerminalInput);
+    setCursorPosition(newTerminalInput.length);
   };
 
   const handleArrowDownKeyDown = () => {
@@ -91,60 +103,43 @@ export const TerminalInputLine = ({
       }
     }
 
-    if (next == null) {
-      setCurHistoryCommandId(null);
-      setTerminalInput('');
-      return;
-    }
+    if (next == null) return;
+
+    const newTerminalInput = `${next.command}${
+      next.argument.length > 0 ? ` ${next.argument}` : ''
+    }`;
 
     setCurHistoryCommandId(next.key);
-    setTerminalInput(
-      `${next.command}${next.argument.length > 0 ? ` ${next.argument}` : ''}`,
-    );
+    setTerminalInput(newTerminalInput);
+    setCursorPosition(newTerminalInput.length);
   };
 
-  const handleBackspaceKeyDown = () => {
-    setTerminalInput((prev) => prev.substring(0, prev.length - 1));
+  const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setCurHistoryCommandId(null);
+    setTerminalInput(event.target.value);
+    setCursorPosition(event.target.selectionStart ?? 0);
   };
 
-  const handleUnknownKeyDown = (keyValue: string) => {
-    if (keyValue.length !== 1) return;
-
-    const charCode = keyValue.charCodeAt(0);
-
-    if (
-      !(
-        (charCode >= 65 && charCode <= 90) ||
-        (charCode >= 97 && charCode <= 122) ||
-        charCode === 32 ||
-        charCode === 46 ||
-        charCode === 47
-      )
-    ) {
-      return;
-    }
-
-    setTerminalInput((prev) => prev + keyValue);
+  const handleKeyUp = (event: KeyboardEvent<HTMLInputElement>) => {
+    setCursorPosition(event.currentTarget.selectionStart ?? 0);
   };
 
-  const handleOnKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+  const handleOnKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     const keyValue = event.key;
-
-    if (keyValue === 'Enter') return handleEnterKeyDown();
-
-    if (keyValue === 'ArrowUp') {
-      event.preventDefault();
-      return handleArrowUpKeyDown();
-    }
 
     if (keyValue === 'ArrowDown') {
       event.preventDefault();
       return handleArrowDownKeyDown();
     }
 
-    if (keyValue === 'Backspace') return handleBackspaceKeyDown();
+    if (keyValue === 'ArrowUp') {
+      event.preventDefault();
+      return handleArrowUpKeyDown();
+    }
 
-    return handleUnknownKeyDown(keyValue);
+    if (keyValue === 'Enter') {
+      return handleEnterKeyDown();
+    }
   };
 
   return (
@@ -161,16 +156,19 @@ export const TerminalInputLine = ({
       >
         <input
           ref={terminalInputRef}
-          className="peer sr-only"
+          className="peer sr-only text-black"
           value={terminalInput}
-          onChange={() => null}
+          onChange={handleOnChange}
           onKeyDown={handleOnKeyDown}
+          onKeyUp={handleKeyUp}
           aria-label="Type a command into the terminal"
         />
-        {getFilePath(user)}&nbsp;{terminalInput}
+        {getFilePath(user)}&nbsp;
+        {terminalInput.substring(0, cursorPosition)}
         <span className="opacity-0 peer-focus:opacity-100 peer-focus:animate-cursor transition-opacity">
           _
         </span>
+        {terminalInput.substring(cursorPosition)}
       </TerminalLine>
     </div>
   );

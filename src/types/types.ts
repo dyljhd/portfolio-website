@@ -10,6 +10,7 @@ import {
   STANDARD_NAMES,
 } from '@/constants';
 
+export type Noop = () => void;
 export type UUID = string;
 export type User = string;
 export type FilePath = `C:\\Users\\${User}>`;

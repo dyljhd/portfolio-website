@@ -32,8 +32,11 @@ import {
   TerminalLineContainer,
 } from '@/components';
 
+import { AnimationWarningOverlay } from '.';
+
 interface ITerminalBodyProps {
   terminalLineGroups: ITerminalLineGroupsState;
+  isMenuExpanded: boolean;
   handleCommand: ({ trigger, input }: HandleCommand) => void;
   handleAchievement: ({
     name,
@@ -48,6 +51,7 @@ interface ITerminalBodyProps {
 
 export const TerminalBody = ({
   terminalLineGroups,
+  isMenuExpanded,
   handleCommand,
   handleAchievement,
 }: ITerminalBodyProps) => {
@@ -105,14 +109,16 @@ export const TerminalBody = ({
       ref={terminalBodyRef}
       onScroll={handleOnScroll}
       className={cn(
-        'flex-1 border-[1px] border-black bg-[#2D2E2C] p-3 max-w-full overflow-y-auto rounded-b-md',
+        'absolute top-[58px] left-2 right-2 bottom-2 border-[1px] border-black bg-[#2D2E2C] p-3 max-w-full overflow-y-auto rounded-b-sm',
+        isMenuExpanded && 'top-[107px]',
         isAnimationsEnabled && 'screen-static animate-screen_static',
       )}
     >
+      <AnimationWarningOverlay handleAchievement={handleAchievement} />
       <TerminalLineContainer>
         <TerminalLine variant="HEADING" animation="STANDARD" isInTabOrder>
           {getUserFirstName({ variant: 'POSSESSIVE' })} Portfolio Terminal
-          [Version 1.0.0]
+          [Version 1.1.0] [26/01/24]
         </TerminalLine>
         <TerminalLine variant="SUBHEADING" isInTabOrder>
           Welcome to my portfolio website! Type the `help` command, or click

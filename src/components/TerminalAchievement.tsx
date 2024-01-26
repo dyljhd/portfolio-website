@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { ITerminalAchievementLineGroup } from '@/types';
+import { ITerminalAchievementLineGroup, Noop } from '@/types';
 
 import { useConfettiAnimation } from '@/hooks';
 
@@ -37,7 +37,7 @@ export const TerminalAchievement = ({ group }: ITerminalAchievementProps) => {
   const { handleConfetti } = useConfettiAnimation();
 
   useEffect(() => {
-    const callNTimes = (fn: () => void, n: number, delay: number) => {
+    const callNTimes = (fn: Noop, n: number, delay: number) => {
       if (n === 0) return;
       fn();
       setTimeout(() => callNTimes(fn, n - 1, delay), delay);

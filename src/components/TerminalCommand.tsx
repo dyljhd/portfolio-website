@@ -47,20 +47,22 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
       {name === 'ABOUT' && (
         <>
           <TerminalLine>
-            Hi, my name is Dylan Delorie. I am from England, and reside in
-            Northampton at the moment.
+            Hello, I'm Dylan Delorie - a 22-year-old from England currently
+            residing in Northampton. I've been immersed in the world of
+            programming since the age of 12 and have been exploring web
+            development for nearly two years now.
           </TerminalLine>
           <TerminalLine>
-            I am 22 years old, have been programming ever since I was 12 years
-            old, and been doing web development coming up to 2 years now.
+            With a genuine enthusiasm for full-stack and frontend web
+            development, I'm excited about the possibilities that lie ahead in
+            expanding my skill set.
           </TerminalLine>
           <TerminalLine>
-            I have a massive passion for full-stack/frontend web development,
-            and hope to branch out into more variety in the future.
-          </TerminalLine>
-          <TerminalLine>
-            I enjoy programming (of course!), building computers, go-karting,
-            video games, a variety of sports, and being in the outdoors.
+            Beyond coding, I find pleasure in diverse activities from building
+            computers, go-karting, enjoying video games, participating in
+            various sports, and simply appreciating the outdoors. Join me as I
+            navigate the evolving tech landscape and share a glimpse into my
+            varied interests.
           </TerminalLine>
         </>
       )}
@@ -68,128 +70,94 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
         <>
           <figure className="flex flex-col gap-5">
             <TerminalLine as="figcaption">
-              This contains a brief overview of all of my work experience in
-              this industry throughout the years:
+              This section provides a concise overview of my extensive
+              professional experience within the web development industry over
+              the years:
             </TerminalLine>
             <ul className="flex flex-col gap-5">
               <li className="flex flex-col gap-2">
                 <TerminalLine variant="SUBHEADING">
-                  Davies Group (DTS) - Full-Stack Web Developer (April 2022 -
+                  Davies Group (DTS) - Frontend Web Developer (April 2022 -
                   Present)
                 </TerminalLine>
                 <TerminalTagContainer>
-                  <TerminalTag>Full-Stack</TerminalTag>
-                  <TerminalTag>Commercial</TerminalTag>
-                  <TerminalTag>Teamwork</TerminalTag>
-                  <TerminalTag>AGILE</TerminalTag>
-                  <TerminalTag>UI/UX</TerminalTag>
-                  <TerminalTag>Design</TerminalTag>
-                  <TerminalTag>Mobile Responsive</TerminalTag>
-                  <TerminalTag>Azure</TerminalTag>
-                  <TerminalTag>Jira</TerminalTag>
-                  <TerminalTag>AWS</TerminalTag>
-                  <TerminalTag>Figma</TerminalTag>
                   <TerminalTag>NextJS</TerminalTag>
                   <TerminalTag>React</TerminalTag>
                   <TerminalTag>Typescript</TerminalTag>
                   <TerminalTag>Javascript</TerminalTag>
-                  <TerminalTag>Redux</TerminalTag>
-                  <TerminalTag>NX</TerminalTag>
-                  <TerminalTag>MUI</TerminalTag>
-                  <TerminalTag>React Query</TerminalTag>
-                  <TerminalTag>React Hook Form</TerminalTag>
-                  <TerminalTag>React-i18</TerminalTag>
                   <TerminalTag>NodeJS</TerminalTag>
-                  <TerminalTag>REST</TerminalTag>
-                  <TerminalTag>ORMs</TerminalTag>
                   <TerminalTag>MySQL</TerminalTag>
                   <TerminalTag>Legacy React/Angular</TerminalTag>
+                  <TerminalTag>Azure/Jira</TerminalTag>
+                  <TerminalTag>AWS</TerminalTag>
+                  <TerminalTag>Figma</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  This is my first job as part of a commercial company. I
-                  started for a smaller company named Contact Partners that
-                  created solutions for banks across the UK to communicate
-                  effectively with their customers. This company was bought by
-                  the Davies Group (DTS) and we merged into a larger team. We
-                  kept hold of all of our legacy applications, but also had many
-                  more opportunities with newer and more up-to-date projects.
+                  In my inaugural position within a corporate setting, I
+                  commenced my professional journey with Contact Partners, a
+                  smaller firm specializing in crafting solutions for banks
+                  across the United Kingdom to enhance effective communication
+                  with their clientele. Subsequently, the company underwent
+                  acquisition by the Davies Group (DTS), leading to our
+                  integration into a larger, collaborative team. While retaining
+                  our legacy applications, this transition provided ample
+                  opportunities to engage in contemporary projects.
                 </TerminalLine>
                 <TerminalLine>
-                  I have worked across a fair few projects at the company now
-                  with the majority utilizing the same base libraries such as
-                  React but using different packages, so have been exposed to a
-                  fair amount of them at this point. Also, I have been involved
-                  in maintaining our legacy products which utilize class-based
-                  React and Angular legacy versions.
+                  Throughout my tenure, I have actively participated in numerous
+                  projects, primarily utilizing foundational libraries such as
+                  React, albeit with diverse package implementations.
+                  Additionally, I assumed responsibility for maintaining legacy
+                  products employing class-based React and earlier versions of
+                  Angular.
                 </TerminalLine>
                 <TerminalLine>
-                  The most recent project has been working, for nearly a year
-                  now, on the frontend of a white-label system that handles
-                  client's orders for massive drinks brands across the world.
-                  The frontend tech stack includes NX, NextJS, React, MUI, React
-                  Query, React Hook Form, React-i18n etc. It has many different
-                  complex aspects such as region selection, viewing products in
-                  catalogues, a cart, a checkout, order management, address
-                  management, user management, admin management for all of these
-                  areas, and much more. I worked as part of a team of a project
-                  manager, business analysts, lead developers, and about 5-10
-                  frontend developers/contractors.
+                  One noteworthy project involved spearheading the frontend
+                  development of a white- label system managing client orders
+                  for renowned global beverage brands, spanning nearly a year.
+                  The extensive frontend tech stack encompassed NX, NextJS,
+                  React, MUI, React Query, React Hook Form, React-i18n, among
+                  others. The project featured intricate functionalities,
+                  including region selection, product catalogue viewing, cart
+                  management, checkout processes, order and address management,
+                  user administration, and comprehensive administrative
+                  oversight. Working collaboratively within a team comprising a
+                  project manager, business analysts, lead developers, and 5-10
+                  frontend developers/contractors, I made substantial
+                  contributions across various aspects of the system.
                 </TerminalLine>
                 <TerminalLine>
-                  I have been a massive contribution to the team and the project
-                  as a whole. I was heavily involved in many of the main aspects
-                  of the system such as the catalogues, cart, checkout, address
-                  management, and navigation, moving between them very
-                  frequently.
+                  Notably, I played a pivotal role in leading the development of
+                  the address management section, a responsibility entrusted to
+                  me by the lead developer. My leadership involved overseeing a
+                  team of senior developers and contractors, delegating tasks,
+                  monitoring progress in team meetings, addressing queries, and
+                  maintaining effective communication with lead developers and
+                  the project manager, employing tools such as Excel
+                  spreadsheets. The successful and timely completion of this
+                  section, with minimal defects, was a source of personal pride,
+                  fostering a desire to lead teams in future endeavors.
                 </TerminalLine>
                 <TerminalLine>
-                  The most notable aspect that I was involved in was leading the
-                  development of the address management section. I was selected
-                  and trusted by my lead developer on the project to take on
-                  this role. I was leading a team of a few senior developers and
-                  contractors by delegating work items, keeping up-to-date with
-                  progress on these items in team meetings, assisting with any
-                  queries or concerns from my team, and communicating all of
-                  this back to my lead developers and project manager by
-                  utilizing Excel spreadsheets. This section of the application
-                  was built in a great time-frame with minimal bugs or issues. I
-                  was proud of my performance whilst undertaking this task and
-                  would love to lead a team again in the future.
+                  During the recent bug phase of the project, I emerged as a key
+                  contributor, consistently delivering prompt bug fixes. A
+                  notable achievement involved resolving a critical issue that
+                  rendered the entire application nonfunctional exclusively on
+                  the Safari browser. Collaborating with both frontend and
+                  backend senior developers, I identified a unique challenge
+                  related to the Content-Encoding response header, specifically
+                  in Safari's strict interpretation compared to other browsers.
+                  My logical problem-solving approach and dedication were
+                  instrumental in uncovering a solution that not only rectified
+                  the issue but showcased my ability to navigate complex
+                  challenges effectively.
                 </TerminalLine>
                 <TerminalLine>
-                  I have been a massive contribution to the latest bug phase of
-                  the project, having a quick and consistent output on bugfixes.
-                  The most notable bugfix I solved was an issue with our entire
-                  application not working on only the Safari browser. This was a
-                  very evident problem to the client and needed to be fixed
-                  ASAP. It had already been looked at by the senior developers
-                  on the frontend and backend to no avail, and I volunteered to
-                  give it a go. This bug would seem to occur as a result of all
-                  of our API requests that contained a data response not seeming
-                  to have been decoded correctly. This led to an error state
-                  being displayed around the majority of the application as a
-                  result of the data not aligning with our expected DTOs,
-                  rendering the entire application unusable on Safari. I found
-                  that the API was applying a `Content-Encoding` response header
-                  of `gzip, gzip`. As a result of this header being involved in
-                  the browser's process of decoding the data, which seemed to be
-                  the issue at hand, it was a good lead. After some further
-                  research, I found that this header should have just been set
-                  to `gzip`, and that Safari was a lot stricter on this header
-                  compared to other browsers. As a result, lenient browsers
-                  ignored the syntax error and decoded the data using the `gzip`
-                  method, but Safari would ignore the header entirely and not
-                  decode the data. This is what ended up being the cause of the
-                  issue. This showcased my logical problem solving ability and
-                  dedication to find a solution. It was an awesome feeling when
-                  everything just started working on Safari, and I knew that was
-                  because of a solution that I found!
-                </TerminalLine>
-                <TerminalLine>
-                  My time as the Davies Group, has been a massive learning
-                  experience in the commercial world of web development, and I
-                  hope for many more years to come in this industry. I
-                  thoroughly enjoy it!
+                  My experience at the Davies Group has been an enriching
+                  learning expedition in the commercial realm of web
+                  development. Eagerly anticipating many more years of growth
+                  and contribution to this dynamic industry, I remain deeply
+                  passionate about my work in web development.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -198,83 +166,73 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   2022)
                 </TerminalLine>
                 <TerminalTagContainer>
-                  <TerminalTag>Full-Stack</TerminalTag>
-                  <TerminalTag>Startup</TerminalTag>
-                  <TerminalTag>Sole Developer</TerminalTag>
-                  <TerminalTag>AGILE</TerminalTag>
-                  <TerminalTag>UI/UX</TerminalTag>
-                  <TerminalTag>Design</TerminalTag>
-                  <TerminalTag>Project Management</TerminalTag>
-                  <TerminalTag>Presenting</TerminalTag>
-                  <TerminalTag>CRUD</TerminalTag>
-                  <TerminalTag>Mobile Responsive</TerminalTag>
-                  <TerminalTag>User Roles</TerminalTag>
-                  <TerminalTag>User Authentication</TerminalTag>
-                  <TerminalTag>User Sessions</TerminalTag>
-                  <TerminalTag>Date/Time Handling</TerminalTag>
                   <TerminalTag>React</TerminalTag>
                   <TerminalTag>Javascript</TerminalTag>
                   <TerminalTag>TailwindCSS</TerminalTag>
-                  <TerminalTag>HTML Canvas</TerminalTag>
+                  <TerminalTag>HTML Canvas (Konva)</TerminalTag>
                   <TerminalTag>NodeJS</TerminalTag>
                   <TerminalTag>Express</TerminalTag>
                   <TerminalTag>MySQL</TerminalTag>
-                  <TerminalTag>ORMs</TerminalTag>
+                  <TerminalTag>ORM</TerminalTag>
                   <TerminalTag>Netlify</TerminalTag>
                   <TerminalTag>Heroku</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I was given the unconventional opportunity, by a family member
-                  (and his business partner), to bring a desk booking software
-                  specification to life with no previous web development
-                  experience.
+                  I was presented with an unconventional opportunity through a
+                  familial connection and his business partner to transform a
+                  desk booking software specification into reality, despite
+                  lacking any prior experience in web development.
                 </TerminalLine>
                 <TerminalLine>
-                  As it already sounds, this was a monumental task for someone
-                  in that scenario, but I stepped up to the challenge, quit my
-                  job as a Maintenance technician for BMW MINI, and went to work
-                  on this full-time. I was just that passionate to give a career
-                  in programming a shot.
+                  Undoubtedly, this undertaking was a significant challenge for
+                  someone in my position. Undeterred, I embraced the challenge
+                  wholeheartedly, resigning from my role as a Maintenance
+                  Technician for BMW MINI to dedicate myself fully to this
+                  endeavor, fueled by a profound passion for exploring a career
+                  in programming.
                 </TerminalLine>
                 <TerminalLine>
-                  I initially did a lot of courses and tutorials to get up to
-                  speed with the latest technologies in web development; this
-                  ended up being React and TailwindCSS on the frontend alongside
-                  NodeJS, Express, and MySQL (with an ORM) on the backend. I
-                  chose this stack as a result of it being beginner-friendly,
-                  but still very powerful and scalable.
+                  To equip myself for the task at hand, I immersed myself in
+                  various courses and tutorials, acquiring proficiency in the
+                  latest web development technologies. The chosen stack
+                  comprised React and TailwindCSS on the frontend, complemented
+                  by NodeJS, Express, and MySQL (with an ORM) on the backend. My
+                  selection was guided by a balance of beginner-friendly
+                  attributes and the stack's inherent power and scalability.
                 </TerminalLine>
                 <TerminalLine>
-                  I analyzed the specification, planned my approach, split the
-                  initial work into manageable sprints, and drew up some initial
-                  designs. It was an up-and-down process with great progress,
-                  alongside facing huge challenges and problems at times, but I
-                  kept a positive mindset and worked through it successfully.
+                  Methodically approaching the project, I meticulously analyzed
+                  the specification, formulated a strategic plan, organized the
+                  initial workload into manageable sprints, and crafted
+                  preliminary designs. The journey was marked by substantial
+                  progress intertwined with formidable challenges, yet I
+                  maintained a positive mindset, successfully navigating through
+                  the highs and lows.
                 </TerminalLine>
                 <TerminalLine>
-                  I had to work to time critical deadlines leading to needing to
-                  continuously communicate with the management on current
-                  progress and any concerns I had.
+                  Operating under stringent timelines, I maintained consistent
+                  communication with management, providing updates on progress
+                  and addressing any concerns that arose during the development
+                  process.
                 </TerminalLine>
                 <TerminalLine>
-                  Once we got to a BETA release, I was involved in client
-                  discussions, which included presenting the product alongside
-                  management, and taking on feedback and change requests to
-                  further develop on.
+                  Upon reaching the BETA release milestone, I actively engaged
+                  in client discussions, presenting the product alongside
+                  management, and incorporating feedback and change requests to
+                  enhance its functionality.
                 </TerminalLine>
                 <TerminalLine>
-                  To summarize, the project was successful and brought on a
-                  multiple clients, but ultimately the product had to be shut
-                  down fairly recently due to funding for the project.
-                </TerminalLine>
-                <TerminalLine>
-                  From my perspective, this was an incredible opportunity, I
-                  learnt so much, took on huge amounts of responsibility,
-                  communicated effectively, and ultimately delivered a product
-                  from a basic specification to a fully-functional
-                  production-ready application as the SOLE developer. I wouldn't
-                  change any bit of it; I am really proud of myself for this
-                  achievement!
+                  In summation, the project achieved success, attracting
+                  multiple clients. Regrettably, the venture had to be
+                  discontinued recently due to funding constraints. From my
+                  perspective, this experience was an invaluable opportunity
+                  that facilitated tremendous personal and professional growth.
+                  Undertaking significant responsibility, effectively
+                  communicating, and serving as the sole developer, I
+                  successfully transformed a basic specification into a
+                  fully-functional, production-ready application. I take immense
+                  pride in this achievement, considering it a testament to my
+                  dedication and capabilities.
                 </TerminalLine>
               </li>
             </ul>
@@ -285,10 +243,42 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
         <>
           <figure className="flex flex-col gap-5">
             <TerminalLine as="figcaption">
-              This contains a brief overview of all of my main coding projects
-              that I have undertaken throughout the years:
+              Presented here is a concise overview of my primary coding
+              projects, showcasing the breadth and depth of my experience
+              accumulated over the years:
             </TerminalLine>
             <ul className="flex flex-col gap-5">
+              <li className="flex flex-col gap-2">
+                <TerminalLine variant="SUBHEADING">
+                  CodinGame Fall (2023)
+                </TerminalLine>
+                <TerminalTagContainer>
+                  <TerminalTag>Typescript</TerminalTag>
+                  <TerminalTag>Algorithms</TerminalTag>
+                  <TerminalTag>Strategy</TerminalTag>
+                </TerminalTagContainer>
+                <TerminalLine>
+                  Building on my experience from a prior participation in
+                  CodinGame during the Spring, I decided to engage in the latest
+                  challenge. The objective of the game was to navigate and
+                  control two drones within an underwater environment. The task
+                  involved scanning various fish of differing values swimming in
+                  the environment, with the primary goal being to efficiently
+                  scan and transport them to the water's surface ahead of the
+                  opponent. The complexity increased with challenges such as
+                  pushing fish out of the environment to render them
+                  un-scannable and the presence of deep-sea monsters capable of
+                  capturing drones, resulting in the loss of all scanned fish.
+                  In response to these challenges, I devised an algorithm that
+                  strategically navigated through key locations to maximize fish
+                  scanning while avoiding deep-sea creatures. The algorithm
+                  dynamically tracked enemy movements and scores, enabling
+                  adaptive decision-making to secure victory in each match. The
+                  outcome was highly satisfactory, achieving a ranking of 583rd
+                  out of 4,669 global competitors and securing the 4th position
+                  among 117 participants in the UK.
+                </TerminalLine>
+              </li>
               <li className="flex flex-col gap-2">
                 <TerminalLine variant="SUBHEADING">
                   My Portfolio Website (2023)
@@ -301,10 +291,12 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>Netlify</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  What you are looking at right now! My goal with this site has
-                  been to showcase my solidified skills in web development to
-                  make a fun, informative, functional, and accessible experience
-                  for people to find out more about me.
+                  What you are seeing right here - a purposefully crafted
+                  platform designed to demonstrate my adept skills in web
+                  development. This site has been meticulously designed to
+                  deliver a compelling, informative, functional, and accessible
+                  user experience, allowing visitors to gain insights into my
+                  professional background and capabilities.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -322,15 +314,18 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>MySQL</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I have been really excited to get into NextJS and this project
-                  has been the best to get started with. I am building a
-                  beautiful and fully-functional Discord clone with a multitude
-                  of features, such as server settings, user roles,
-                  server/direct messaging, video calling, a database, user
-                  authentication, and image handling etc. It's been a massive
-                  learning experience in a lot of areas, but I am taking it
-                  slow, ensuring I completely understand a section before moving
-                  on to the next, and most importantly, having fun!
+                  I am enthusiastic about delving into NextJS, and the ongoing
+                  project I am undertaking serves as an optimal initiation.
+                  Within this endeavor, I am meticulously constructing a
+                  visually appealing and fully-functional Discord clone,
+                  incorporating an array of features. These features encompass
+                  server settings, user roles, server/direct messaging, video
+                  calling, database integration, user authentication, and image
+                  handling, among others. This undertaking has presented a
+                  substantial learning curve across various domains. However, I
+                  am approaching it methodically, ensuring comprehensive
+                  understanding before progressing to subsequent sections. Above
+                  all, I find great enjoyment in this learning journey.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -341,29 +336,26 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>NPM</TerminalTag>
                   <TerminalTag>Typescript</TerminalTag>
                   <TerminalTag>React Testing Library</TerminalTag>
-                  <TerminalTag>Configuration</TerminalTag>
-                  <TerminalTag>Problem Solving</TerminalTag>
+                  <TerminalTag>Project Configuration</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I created my very first NPM package. I was trying to solve a
-                  bug at work and found the problem to be related to an
-                  implementation using React's useEffect hook. I didn't know
-                  what dependencies were causing the useEffect to be triggered.
-                  After some searching online, I came across a debugger concept
-                  for the useEffect hook that ended up helping me solve the bug.
-                  Instead of this being a piece of code I had to save locally, I
-                  wanted to make it into a package that myself, or my
-                  colleagues, or anyone for that matter could use when facing
-                  any issues with the useEffect hook. I took the concept code,
-                  cleaned it up, added additional features to it, and tested my
-                  implementation with React Testing Library. It works a treat
-                  and is currently on NPM for you to install and try if you
-                  want!
+                  I successfully developed my inaugural NPM package in response
+                  to a workplace bug. The issue was traced back to an
+                  implementation utilizing React's useEffect hook, where the
+                  triggering dependencies were unclear. Extensive online
+                  research led me to a debugging concept for the useEffect hook
+                  that proved instrumental in resolving the bug. Recognizing its
+                  broader utility, I transformed the debugging code into a
+                  comprehensive package. This package, thoroughly refined and
+                  enhanced, includes additional features and has undergone
+                  rigorous testing with React Testing Library. It is now
+                  available on NPM for wider use, providing a reliable solution
+                  for troubleshooting issues with the useEffect hook.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
                 <TerminalLine variant="SUBHEADING">
-                  Codin Game Spring (2023)
+                  CodinGame Spring (2023)
                 </TerminalLine>
                 <TerminalTagContainer>
                   <TerminalTag>Typescript</TerminalTag>
@@ -372,22 +364,23 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>Strategy</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  As I had been getting into a bit of AlgoExpert at this time, I
-                  was recommended a coding game by one of my work colleagues and
-                  jumped at the challenge. The goal of the game was to battle an
-                  AI and other participants to capture as many resources from
-                  objectives around a map, with a multitude of other factors
-                  being added to the game as you would rise through the leagues
-                  to make things more challenging. You would have to update and
-                  re-think your strategy each time a new factor to the game
-                  would be added. I ended up implementing a BFS algorithm in TS,
-                  which I used to work out the quickest or most efficient path
-                  to objectives that were on the map. From that, I was able to
-                  then prioritize these objectives dependant on current game
-                  factors and my opponents position on the map. It was really
-                  fun, challenging, and I learnt a lot! I ended up finishing
-                  1,611th out of 5,290 participants, which I was really proud of
-                  considering it was my first dabbling in algorithms.
+                  During a period of engagement with AlgoExpert, a work
+                  colleague recommended a coding game that immediately captured
+                  my interest. The objective of the game was to engage in
+                  strategic battles against an AI and fellow participants,
+                  capturing resources from objectives strategically placed
+                  across a dynamic map. The complexity of the game increased
+                  with each progression through the leagues, introducing
+                  additional challenges that demanded constant strategy updates.
+                  In response, I implemented a Breadth-First Search (BFS)
+                  algorithm in TypeScript to determine the most efficient paths
+                  to map objectives. This algorithm allowed me to prioritize
+                  objectives based on real-time game factors and opponents'
+                  positions on the map. The experience was both enjoyable and
+                  intellectually stimulating, offering valuable insights into
+                  algorithmic problem-solving. Achieving a commendable 1,611th
+                  place out of 5,290 participants in my inaugural foray into
+                  algorithmic challenges was a source of pride.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -402,16 +395,20 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>Coding Problems/Questions</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I started a subscription with AlgoExpert this year to
-                  undertake the AlgoExpert and FrontendExpert courses. The
-                  AlgoExpert course included a video tutorial series about data
-                  structures, which really opened my eyes to the inner workings
-                  of computers, and the different data structures and principles
-                  that can be utilized, along with their performance in space
-                  and time complexity. Also, it includes 200+ coding questions,
-                  that I having been diving into - still a lot left to solve!
-                  The FrontendExpert course included all of the fundamentals for
-                  website development such as HTML, CSS, JS, and React etc.
+                  This year, I enrolled in AlgoExpert to partake in both the
+                  AlgoExpert and FrontendExpert courses. The AlgoExpert course
+                  provided an enlightening video tutorial series on data
+                  structures, offering a profound understanding of the
+                  intricacies of computer systems. The course explored various
+                  data structures and principles, delving into their application
+                  and evaluating their performance in terms of space and time
+                  complexity. Additionally, the course included a comprehensive
+                  set of 200+ coding questions, which I am actively engaging
+                  with - a journey that continues to present challenges and
+                  opportunities for growth. In parallel, the FrontendExpert
+                  course covered foundational aspects of website development,
+                  encompassing HTML, CSS, JavaScript, and React, among other
+                  essential components.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -419,34 +416,27 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   React Native E-commerce App (2022)
                 </TerminalLine>
                 <TerminalTagContainer>
-                  <TerminalTag>React</TerminalTag>
                   <TerminalTag>React Native</TerminalTag>
                   <TerminalTag>App Development</TerminalTag>
                   <TerminalTag>Expo</TerminalTag>
-                  <TerminalTag>Push Notifications</TerminalTag>
-                  <TerminalTag>Mobile Permissions</TerminalTag>
-                  <TerminalTag>Navigation</TerminalTag>
-                  <TerminalTag>Screens</TerminalTag>
-                  <TerminalTag>StyleSheet</TerminalTag>
-                  <TerminalTag>Data-Fetching</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I used to think React could only be used to create web
-                  applications, but my understanding shifted when I released
-                  that it could create applications on so many different
-                  platforms. The ones that spiked my interest were desktop
-                  applications (with Electron), and mobile applications (with
-                  React Native). As I had been making desktop applications with
-                  Python before, I found it more exciting to throw myself into
-                  app development for the first time. I bought a course by
-                  Programming with Mosh, who walked me through building a
-                  simplified e-commerce application with Expo, with features
-                  such as user accounts, account settings, adding/editing
-                  products, viewing products, direct messaging, push
-                  notifications etc. It was a fairly simple application, but it
-                  gave me some great exposure to the similarities and
-                  differences that there are when creating React applications
-                  across two different types of platforms.
+                  My perception of React was initially confined to its
+                  application in web development, but my perspective broadened
+                  significantly upon discovering its versatility across various
+                  platforms. Notably, React's capabilities extend to the
+                  creation of desktop applications through Electron and mobile
+                  applications via React Native. Intrigued by these
+                  possibilities, I transitioned from prior experience in desktop
+                  applications with Python to immerse myself in app development.
+                  I invested in a course by Programming with Mosh, which guided
+                  me through the process of constructing a streamlined
+                  e-commerce application using Expo. The application featured
+                  user accounts, account settings, product management, product
+                  viewing, direct messaging, push notifications, and more. While
+                  the application was relatively straightforward, it provided
+                  invaluable exposure to the nuances and distinctions inherent
+                  in developing React applications across diverse platforms.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -456,17 +446,17 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                 <TerminalTagContainer>
                   <TerminalTag>React</TerminalTag>
                   <TerminalTag>Web Development</TerminalTag>
-                  <TerminalTag>Full-Stack</TerminalTag>
-                  <TerminalTag>SPIKE</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  This aligns with when I started at Deskbooker, when I was
-                  tasked with being the sole developer to build a desk booking
-                  software (explained in the work experience section). Prior to
-                  starting this monumental project, I created a few simple React
-                  applications, such as a todo and quiz app, to practice my
-                  newly gained knowledge, and to SPIKE prior to creating the
-                  bigger project at hand.
+                  This period coincided with my commencement at Deskbooker,
+                  where I undertook the role of the sole developer tasked with
+                  constructing a desk booking software (details provided in the
+                  work experience section). Before embarking on this significant
+                  project, I dedicated time to crafting several rudimentary
+                  React applications, including a to-do app and a quiz app.
+                  These endeavors served both as a practice ground for
+                  consolidating my newly acquired knowledge and as a precursor
+                  to priming myself for the larger-scale project that lay ahead.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -478,23 +468,24 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>Tkinter</TerminalTag>
                   <TerminalTag>Software Development</TerminalTag>
                   <TerminalTag>Game Development</TerminalTag>
-                  <TerminalTag>UI/UX</TerminalTag>
-                  <TerminalTag>Polling</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I made a multitude of Python UI applications whilst working
-                  through my apprenticeship as a maintenance technician at BMW
-                  MINI. To go beyond terminal applications, I started using a
-                  GUI library built into Python called Tkinter, which allowed me
-                  to create decent-looking (a bit Windows 96') and functional
-                  graphical user interfaces. This was the start of my interest
-                  for designing a UI and thinking about the UX. I made
-                  applications such as a weather forecast checker,
-                  rock-paper-scissors game, and a calendar etc. It was very
-                  exiting to start seeing my Python code come to life instead of
-                  always being based within the terminal; it definitely lifted a
-                  fair amount of limitations and allowed me to get really
-                  creative!
+                  During my tenure as a maintenance technician apprentice at BMW
+                  MINI, I developed a diverse array of Python UI applications to
+                  complement my professional growth. In an effort to transcend
+                  terminal-based applications, I embraced Tkinter, a GUI library
+                  integrated into Python, enabling the creation of visually
+                  appealing and functional graphical user interfaces, albeit
+                  with a touch of Windows 96' aesthetics. This marked the
+                  genesis of my keen interest in UI design and UX
+                  considerations. Among the applications I crafted were a
+                  weather forecast checker, a rock-paper-scissors game, and a
+                  calendar, each contributing to an exciting phase of
+                  transitioning from terminal-bound coding to witnessing the
+                  manifestation of my Python code in dynamic, graphical
+                  interfaces. This shift not only liberated me from certain
+                  limitations but also fueled a surge of creativity in my
+                  development endeavors.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -504,18 +495,20 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                 <TerminalTagContainer>
                   <TerminalTag>Python</TerminalTag>
                   <TerminalTag>Terminal</TerminalTag>
-                  <TerminalTag>Game Development</TerminalTag>
                   <TerminalTag>Software Development</TerminalTag>
+                  <TerminalTag>Game Development</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I made a multitude of Python terminal applications/games
-                  whilst in the second-half of secondary school as this was
-                  introduced in more advanced computer science lessons. I really
-                  enjoyed making helpful apps and fun games such as an adventure
-                  game, calculator, hangman, contact book etc. within the
-                  terminal. I found it to be a very good first programming
-                  language for me as a result of it being versatile, concise,
-                  and easy to read.
+                  During the latter part of my secondary school education, I
+                  engaged in the development of a variety of Python terminal
+                  applications and games, a pursuit cultivated through advanced
+                  computer science coursework. This period was marked by the
+                  creation of both practical applications and entertaining
+                  games, including an adventure game, calculator, hangman, and a
+                  contact book, all confined within the terminal environment.
+                  Python served as an ideal first programming language for me
+                  due to its versatility, conciseness, and readability,
+                  providing a solid foundation for my early coding experiences.
                 </TerminalLine>
               </li>
               <li className="flex flex-col gap-2">
@@ -528,13 +521,17 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
                   <TerminalTag>Animations</TerminalTag>
                 </TerminalTagContainer>
                 <TerminalLine>
-                  I made a multitude of Scratch games whilst in the first-half
-                  of secondary school as this was introduced in ICT lessons. I
-                  really enjoyed making small games and animations using the
-                  block programming structure. It was simple and easy to
-                  understand, which made it engaging and kept a beginner like
-                  myself coming back for more. This was my first exposure to
-                  programming and evidently wasn't my last!
+                  During the initial phase of my secondary school education, I
+                  cultivated my programming skills by creating a variety of
+                  games using Scratch - a platform introduced in ICT lessons. I
+                  found immense enjoyment in crafting small games and animations
+                  through the intuitive block programming structure that Scratch
+                  offers. Its simplicity and ease of understanding not only made
+                  the learning process engaging but also encouraged continuous
+                  exploration. This initial exposure to programming marked the
+                  beginning of my journey in the field, laying a solid
+                  foundation for my subsequent endeavors in the world of
+                  software development.
                 </TerminalLine>
               </li>
             </ul>
@@ -545,33 +542,32 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
         <>
           <figure className="flex flex-col gap-1.5">
             <TerminalLine as="figcaption">
-              Here are my desired career goals that I would like to work
-              towards/potentially accomplish within the next few years:
+              I am committed to advancing my career by strategically pursuing
+              the following objectives over the next few years:
             </TerminalLine>
             <ol className="flex flex-col gap-1">
               <TerminalLine as="li">
-                1. Refine my understanding and skills in my commonly used
-                technologies such as React, TS, JS, and NodeJS etc.
+                1. Enhance proficiency and mastery in core technologies,
+                including React, TypeScript, JavaScript, and NodeJS.
               </TerminalLine>
               <TerminalLine as="li">
-                2. Explore and experiment with newly introduced technologies
-                that I am interested in such as NextJS, Electron, and React
-                Native.
+                2. Investigate and integrate emerging technologies such as
+                NextJS, Electron, and React Native into my skill set.
               </TerminalLine>
               <TerminalLine as="li">
-                3. Work towards a senior developer status and pay-grade, and
-                potentially become a 'second in command' on important company
-                projects.
+                3. Aspire to attain a senior developer status and corresponding
+                pay-grade, with the goal of assuming a leadership role as a key
+                contributor on pivotal company projects.
               </TerminalLine>
               <TerminalLine as="li">
-                4. Always continue to push myself learn new things to help
-                ensure that I hold onto my immense passion and enthusiasm for
-                web development and programming in general.
+                4. Sustain an unwavering passion for continuous learning,
+                ensuring a dynamic and up-to-date knowledge base in web
+                development and programming.
               </TerminalLine>
               <TerminalLine as="li">
-                5. Make something of use to developers in my industry; solving a
-                problem and making a intuitive and efficient solution that is
-                accessible to the masses.
+                5. Contribute meaningfully to the developer community by
+                creating solutions that address industry challenges, providing
+                intuitive and efficient tools accessible to a broad audience.
               </TerminalLine>
             </ol>
           </figure>
@@ -589,7 +585,7 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
       {name === 'CONTACT' && (
         <figure className="flex flex-col gap-1.5">
           <TerminalLine as="figcaption">
-            You can get in contact with me using the following methods as shown
+            You can get in contact with me using the following methods outlined
             below:
           </TerminalLine>
           <ul className="flex flex-col gap-0.5">
@@ -631,72 +627,62 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
       {name === 'HELP' && (
         <>
           <TerminalLine>
-            This website very much mirrors the look and feel of the Windows
-            command prompt terminal. If you are not sure what that is, it is the
-            thing they show in movies when they are trying to make someone look
-            like an expert hacker! Jokes aside, you can write commands in this
-            terminal to learn more about me!
+            Welcome to a unique and interactive experience! This portfolio
+            website takes inspiration from the aesthetic of the Windows command
+            prompt terminal, often depicted in movies to showcase expert hacking
+            scenes - minus the Hollywood dramatization, of course.
           </TerminalLine>
           <figure className="flex flex-col gap-1.5">
             <TerminalLine as="figcaption">
-              You can enter the following commands:
+              Feel free to explore more about me by entering commands in this
+              terminal-like interface:
             </TerminalLine>
             <ul className="flex flex-col gap-1">
+              <TerminalLine as="li">about - learn more about me</TerminalLine>
               <TerminalLine as="li">
-                `about` - this will tell you more about me
+                experience - explore my work history
               </TerminalLine>
               <TerminalLine as="li">
-                `experience` - this will tell you more about my work experience
+                projects - discover details about my personal projects
               </TerminalLine>
               <TerminalLine as="li">
-                `projects` - this will tell you more about my personal projects
+                goals - understand my career aspirations
               </TerminalLine>
               <TerminalLine as="li">
-                `goals` - this will tell you more about my desired outcomes and
-                goals for my career
+                cv - access my Curriculum Vitae
               </TerminalLine>
               <TerminalLine as="li">
-                `cv` - this will give you a link to view my CV
-              </TerminalLine>
-              <TerminalLine as="li">
-                `contact` - this will tell you all of the ways you can get in
-                contact with me (with that job offer)
+                contact - find various ways to reach out, especially with that
+                enticing job offer!
                 <TerminalIcon src={winkingWithTongueFaceImage} size="SMALL" />
               </TerminalLine>
             </ul>
           </figure>
-          <TerminalLine>
-            I must add that you can input commands into the terminal using the
-            following syntax: {'`<COMMAND> <ARGUMENT>`'}. For example, `foo
-            bar`, where `foo` is the command, and `bar` is the argument.
-          </TerminalLine>
-          <TerminalLine>
-            That is the main aspect of this portfolio website or it would be a
-            pretty bad one, but I have also added a few extra bits to make
-            things more fun and exciting!
-          </TerminalLine>
           <figure className="flex flex-col gap-1.5">
             <TerminalLine as="figcaption">
-              I have added a few extra helpful commands (not the 'fun and
-              exciting' part):
+              Also, I've incorporated a few additional commands:
             </TerminalLine>
             <ul className="flex flex-col gap-1">
               <TerminalLine as="li">
-                `clear` - this will clear the entire terminal (this cannot be
-                undone)
+                clear - wipe the entire terminal (be cautious, as this action is
+                irreversible)
               </TerminalLine>
               <TerminalLine as="li">
-                `help` - this will show the same output as being shown now
+                help - get the same information as displayed here
               </TerminalLine>
             </ul>
           </figure>
           <TerminalLine>
-            Lastly, there are some achievements and easter eggs that can be
-            found by writing certain commands or interacting with the website in
-            certain ways. As an example, type `helloworld` into the terminal to
-            find your first easter egg! You will see that the counters shown in
-            the terminal header will let you know your progress with both of
-            these. I'll leave it to you to find the rest. Happy hunting!
+            When using commands, adhere to the syntax &lt;COMMAND&gt;
+            &lt;ARGUMENT&gt;, for instance, foo bar, where foo is the command,
+            and bar is the argument.
+          </TerminalLine>
+          <TerminalLine>
+            But that's not all! Elevating the experience, there are achievements
+            and easter eggs waiting to be discovered. Type `helloworld` to
+            unlock your first easter egg! Keep an eye on the counters in the
+            terminal header to track your progress. I'll let you uncover the
+            rest. Happy hunting!
           </TerminalLine>
           <button
             onClick={() => setShowHints((prev) => !prev)}
@@ -719,33 +705,37 @@ export const TerminalCommand = ({ group }: ITerminalCommandProps) => {
               aria-atomic={true}
             >
               <TerminalLine as="figcaption">
-                As requested by the little cheater you are, here are the hints
-                for the rest of the easter eggs and achievements:
+                In response to your insatiable curiosity for easter eggs and
+                achievements, here are the clues that will guide you through the
+                captivating journey of discovery:
               </TerminalLine>
               <ol className="flex flex-col gap-1.5">
                 <TerminalLine as="li" aria-label="Hint #1: Close">
-                  1: <XMarkIcon className="inline-block h-6 w-6" />
+                  1: <XMarkIcon className="inline-block h-6 w-6" /> (EASY)
                 </TerminalLine>
-                <TerminalLine as="li" aria-label="Hint #2: Going up!">
-                  2: <RocketLaunchIcon className="inline-block h-6 w-6" />
+                <TerminalLine as="li" aria-label="Hint #2: Animation">
+                  2: <VideoCameraIcon className="inline-block h-6 w-6" /> (EASY)
                 </TerminalLine>
-                <TerminalLine as="li" aria-label="Hint #3: All tasks completed">
-                  3: <CheckCircleIcon className="inline-block h-6 w-6" />
+                <TerminalLine as="li" aria-label="Hint #3: Going up!">
+                  3: <RocketLaunchIcon className="inline-block h-6 w-6" />{' '}
+                  (MEDIUM)
                 </TerminalLine>
-                <TerminalLine as="li" aria-label="Hint #4: Animation">
-                  4: <VideoCameraIcon className="inline-block h-6 w-6" />
+                <TerminalLine as="li" aria-label="Hint #4: All tasks completed">
+                  4: <CheckCircleIcon className="inline-block h-6 w-6" />{' '}
+                  (MEDIUM)
                 </TerminalLine>
                 <TerminalLine as="li" aria-label="Hint #5: Changing name">
                   5: <IdentificationIcon className="inline-block h-6 w-6" />
                   <ArrowRightIcon className="inline-block h-6 w-6 ml-1" />
-                  <IdentificationIcon className="inline-block h-6 w-6 ml-1" />
+                  <IdentificationIcon className="inline-block h-6 w-6 ml-1" />{' '}
+                  (HARD)
                 </TerminalLine>
                 <TerminalLine
                   as="li"
                   aria-label="Hint #6: Going backwards and forwards"
                 >
                   6: <BackwardIcon className="inline-block h-6 w-6" />
-                  <ForwardIcon className="inline-block h-6 w-6 ml-1" />
+                  <ForwardIcon className="inline-block h-6 w-6 ml-1" /> (HARD)
                 </TerminalLine>
               </ol>
             </figure>

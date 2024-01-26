@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, useState } from 'react';
 
 import { ACHIEVEMENT_NAMES, EASTER_EGG_NAMES } from '@/constants';
 
@@ -20,8 +20,12 @@ import {
 import { TerminalBody, TerminalHeader } from '@/features';
 
 const Providers = ({ children }: PropsWithChildren) => {
-  const { isAnimationsEnabled, handleToggleAnimationsEnabled } =
-    useAnimationsEnabled();
+  const {
+    isAnimationsEnabled,
+    isInitialAnimationsWarningAccepted,
+    handleToggleAnimationsEnabled,
+    handleAcceptInitialAnimationsWarning,
+  } = useAnimationsEnabled();
   const {
     foundEasterEggNames,
     handleEasterEggFound,
@@ -38,7 +42,12 @@ const Providers = ({ children }: PropsWithChildren) => {
 
   return (
     <AnimationContext.Provider
-      value={{ isAnimationsEnabled, handleToggleAnimationsEnabled }}
+      value={{
+        isAnimationsEnabled,
+        isInitialAnimationsWarningAccepted,
+        handleToggleAnimationsEnabled,
+        handleAcceptInitialAnimationsWarning,
+      }}
     >
       <UserContext.Provider
         value={{ user, handleUserChange, getUserFirstName }}
@@ -79,15 +88,21 @@ const AppContent = () => {
     handleAchievement,
   } = useTerminalLineGroups();
 
+  const [isMenuExpanded, setIsMenuExpanded] = useState(false);
+  const handleToggleIsMenuExpanded = () => setIsMenuExpanded((prev) => !prev);
+
   return (
-    <div className="h-full flex flex-col bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 py-2 px-1.5">
+    <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
       <TerminalHeader
+        isMenuExpanded={isMenuExpanded}
+        handleToggleIsMenuExpanded={handleToggleIsMenuExpanded}
         handleCommand={handleCommand}
         handleEasterEgg={handleEasterEgg}
         handleAchievement={handleAchievement}
       />
       <TerminalBody
         terminalLineGroups={terminalLineGroups}
+        isMenuExpanded={isMenuExpanded}
         handleCommand={handleCommand}
         handleAchievement={handleAchievement}
       />

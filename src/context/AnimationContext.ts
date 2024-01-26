@@ -1,11 +1,17 @@
 import { createContext } from 'react';
 
+import { Noop } from '@/types';
+
 interface IAnimationContext {
   isAnimationsEnabled: boolean;
-  handleToggleAnimationsEnabled: () => void;
+  isInitialAnimationsWarningAccepted: boolean;
+  handleToggleAnimationsEnabled: Noop;
+  handleAcceptInitialAnimationsWarning: Noop;
 }
 
 export const AnimationContext = createContext<IAnimationContext>({
-  isAnimationsEnabled: true,
+  isAnimationsEnabled: false,
+  isInitialAnimationsWarningAccepted: false,
   handleToggleAnimationsEnabled: () => null,
+  handleAcceptInitialAnimationsWarning: () => true,
 });

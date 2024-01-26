@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  height: 100%;
-}
-
 .screen-static {
   background-image: linear-gradient(
     90deg,
@@ -25,22 +20,18 @@ body {
   background-size: 12px 12px;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 12.5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: lightgray;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: gray;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

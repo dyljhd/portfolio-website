@@ -1,7 +1,15 @@
+import { useContext } from 'react';
+
 import confetti from 'canvas-confetti';
 
+import { AnimationContext } from '@/context';
+
 export const useConfettiAnimation = () => {
+  const { isAnimationsEnabled } = useContext(AnimationContext);
+
   const handleConfetti = () => {
+    if (!isAnimationsEnabled) return;
+
     confetti({
       particleCount: 50,
       angle: 60,
