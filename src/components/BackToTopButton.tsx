@@ -65,10 +65,11 @@ export const BackToTopButton = ({
     <button
       ref={backToTopButtonRef}
       className={cn(
-        'fixed bottom-8 right-5 transition-opacity animate-bounce',
+        'fixed bottom-8 right-5 transition-opacity',
         isBackToTopButtonVisible
           ? 'opacity-100'
           : 'opacity-0 pointer-events-none',
+        isAnimationsEnabled && 'animate-bounce',
       )}
       tabIndex={isBackToTopButtonVisible ? 0 : -1}
       onAnimationStart={(e) => {

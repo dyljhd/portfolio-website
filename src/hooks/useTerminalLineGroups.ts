@@ -259,7 +259,7 @@ export const useTerminalLineGroups = () => {
   const [terminalLineGroups, dispatch] = useReducer(reducer, initialState);
 
   const handleFlushTerminalLineGroupsForPerformance = () => {
-    if (terminalLineGroups.groups.length > 100) {
+    if (terminalLineGroups.groups.length > 10) {
       dispatch({ type: 'FLUSH_TERMINAL_LINE_GROUPS', amountOfGroups: 1 });
     }
   };
@@ -334,6 +334,13 @@ export const useTerminalLineGroups = () => {
       command,
       argument,
     });
+
+    // This is executed here so that it is shown under the main command output
+    if (!arrIncludes(Object.values(COMMANDS), command)) {
+      handleEasterEgg({
+        name: 'WRONG_COMMAND',
+      });
+    }
 
     handleMainCommandsFound(command);
   };

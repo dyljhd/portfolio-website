@@ -45,12 +45,14 @@ export const EASTER_EGG_NAMES = {
   RUFUS: 'RUFUS',
   HELLO_WORLD: 'HELLO_WORLD',
   CHANGE_USER_DIR: 'CHANGE_USER_DIR',
+  WRONG_COMMAND: 'WRONG_COMMAND',
 } as const;
 
 export const EASTER_EGG_ONE_TIME_SHOW = {
   RUFUS: false,
   HELLO_WORLD: false,
   CHANGE_USER_DIR: false,
+  WRONG_COMMAND: false,
 } as const satisfies Record<EasterEggName, boolean>;
 
 export const ACHIEVEMENT_NAMES = {

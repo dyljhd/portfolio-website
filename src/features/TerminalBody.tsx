@@ -118,13 +118,13 @@ export const TerminalBody = ({
       <TerminalLineContainer>
         <TerminalLine variant="HEADING" animation="STANDARD" isInTabOrder>
           {getUserFirstName({ variant: 'POSSESSIVE' })} Portfolio Terminal
-          [Version 1.1.0] [26/01/24]
+          [Version 1.2.0 - 04/02/24]
         </TerminalLine>
         <TerminalLine variant="SUBHEADING" isInTabOrder>
           Welcome to my portfolio website! Type the `help` command, or click
           the&nbsp;
           <InformationCircleIcon className="inline-block h-6 w-6" /> in the
-          terminal header to get started!
+          header to get started!
         </TerminalLine>
       </TerminalLineContainer>
       {renderTerminalGroups()}

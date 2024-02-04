@@ -57,23 +57,23 @@ export const TerminalEasterEgg = ({ group }: ITerminalEasterEggProps) => {
         )}
         {name === 'HELLO_WORLD' && (
           <TerminalLine animation="GOLD">
-            Hello to you too!
+            Greetings to you as well!
             <TerminalIcon src={wavingHandImage} size="SMALL" />
           </TerminalLine>
         )}
         {name === 'CHANGE_USER_DIR' && (
           <TerminalLine animation="GOLD">
-            This is my website, not yours!
+            This website belongs to me, not you!
             <TerminalIcon src={angryFaceImage} size="SMALL" />
           </TerminalLine>
         )}
         {name === 'RUFUS' && (
           <TerminalLineContainer>
             <TerminalLine animation="GOLD">
-              I couldn't think of a use for these buttons, so instead if you
-              click them, you get to see a cute picture of me and Rufus. He is a
-              Golden Irish puppy, which is a Golden Retriever and Irish Setter
-              crossbreed. Lucky you!
+              I couldn't find a practical function for these buttons, so if you
+              happen to click them, you'll be treated to an adorable picture of
+              me and Rufus. Rufus is a charming Golden Irish puppy, a mix of a
+              Golden Retriever and Irish Setter. Consider yourself lucky!
               <TerminalIcon src={dogFaceImage} size="SMALL" />
             </TerminalLine>
             <div className="max-w-full w-max rounded-md overflow-hidden">
@@ -85,6 +85,12 @@ export const TerminalEasterEgg = ({ group }: ITerminalEasterEggProps) => {
               />
             </div>
           </TerminalLineContainer>
+        )}
+        {name === 'WRONG_COMMAND' && (
+          <TerminalLine animation="RED">
+            Oops, a small detour there! No biggie, we're all navigating through
+            a bit of trial and error.
+          </TerminalLine>
         )}
       </TerminalLineGroup>
     )

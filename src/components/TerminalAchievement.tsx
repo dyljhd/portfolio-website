@@ -68,9 +68,9 @@ export const TerminalAchievement = ({ group }: ITerminalAchievementProps) => {
           <>
             <TerminalLine animation="GOLD">BORINGGG!</TerminalLine>
             <TerminalLine animation="GOLD">
-              This is only a joke. I understand that some need the ability to do
-              this, hence why I added it. I hope I made the terminal look nice
-              enough with the animations turned off!
+              This is just a joke. I recognize that some may need this
+              capability. I hope that the terminal looks good even without the
+              animations!
               <TerminalIcon src={worriedFaceImage} size="SMALL" />
             </TerminalLine>
           </>
@@ -83,9 +83,10 @@ export const TerminalAchievement = ({ group }: ITerminalAchievementProps) => {
               <TerminalIcon src={rocketImage} size="SMALL" />
             </TerminalLine>
             <TerminalLine animation="GOLD">
-              Made it kinda pointless clicking this button for the first time,
-              but you got to see some cool confetti, so clicking it again
-              (hopefully) isn't too much to ask for
+              Clicking this button the first time might have seemed a bit
+              pointless, but hey, you were treated to some cool confetti!
+              Consider giving it another click, hopefully not too much to ask
+              for!
               <TerminalIcon src={pleadingFaceImage} size="SMALL" />
             </TerminalLine>
           </>
@@ -94,7 +95,7 @@ export const TerminalAchievement = ({ group }: ITerminalAchievementProps) => {
           <>
             <TerminalLine animation="GOLD">HOLDING ONTO THE PAST!</TerminalLine>
             <TerminalLine animation="GOLD">
-              Surely there is a new command you could execute instead?!
+              Is there perhaps another command you could try instead?
             </TerminalLine>
           </>
         )}
@@ -105,14 +106,13 @@ export const TerminalAchievement = ({ group }: ITerminalAchievementProps) => {
               <TerminalIcon src={worriedFaceImage} size="SMALL" />
             </TerminalLine>
             <TerminalLine animation="GOLD">
-              You have entered all of the main commands for information about
-              me. You know everything there is to know; hopefully you are not
-              too disappointed!
+              You've inputted all the commands, and now you know everything
+              there is to know. Hopefully, you're not too disappointed!
               <TerminalIcon src={grinningWithSweatFaceImage} size="SMALL" />
             </TerminalLine>
             <TerminalLine animation="GOLD">
-              Thanks for taking a look at my portfolio; I hope I was able to put
-              a smile on your face!
+              Thank you for exploring my portfolio; I hope it brought a smile to
+              your face!
             </TerminalLine>
           </>
         )}
